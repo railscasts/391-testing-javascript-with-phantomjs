@@ -1,0 +1,9 @@
+<h1>Orders</h1>
+
+<p><%= link_to 'New Order', new_order_path %></p>
+
+<div id="orders">
+  <%= render @orders %>
+</div>
+
+<%= will_paginate @orders %>
